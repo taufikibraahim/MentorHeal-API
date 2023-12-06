@@ -1,18 +1,18 @@
 import express from "express";
 import {
-    getBayar,
-    getBayarById,
-    saveBayar,
-    updateBayar,
-    deleteBayar
-} from "../controller/BayarController.js";
+    getRekomendasi,
+    getRekomendasiById,
+    saveRekomendasi,
+    updateRekomendasi,
+    deleteRekomendasi
+} from "../controller/RekomendasiController.js";
 
 const router = express.Router();
 
-router.get('/bayar', getBayar);
-router.get('/bayar/:id', getBayarById);
-router.post('/bayar', saveBayar);
-router.patch('/bayar/:id', updateBayar);
-router.delete('/bayar/:id', deleteBayar);
+router.get('/rekomendasi', getRekomendasi);
+router.get('/rekomendasi/:id', getRekomendasiById);
+router.post('/rekomendasi', saveRekomendasi);
+router.patch('/rekomendasi/:id', updateRekomendasi);
+router.delete('/rekomendasi/:id', deleteRekomendasi);
 
 export default router;
